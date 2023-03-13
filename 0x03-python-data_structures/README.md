@@ -47,9 +47,14 @@
 **8-multiple_returns.py:** returns a tuple with the length of a string and its first character.
 
 - Prototype: `def multiple_returns(sentence):`
-- If the sentence is empty, the first character should be equal to `None`
+- If the sentence is empty, the first character should be equal to `None`.
 
 **9-max_integer.py:** finds the biggest integer of a list.
 
 - Prototype: `def max_integer(my_list=[]):`
-- If the list is empty, return `None`
+- If the list is empty, return `None`.
+
+**10-divisible_by_2.py:** finds all multiples of 2 in a list.
+
+- Prototype: `def divisible_by_2(my_list=[]):`
+- Return a new list with `True` or `False`, depending on whether the integer at the same position in the original list is a multiple of 2.
