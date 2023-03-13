@@ -58,3 +58,8 @@
 
 - Prototype: `def divisible_by_2(my_list=[]):`
 - Return a new list with `True` or `False`, depending on whether the integer at the same position in the original list is a multiple of 2.
+
+**11-delete_at.py:** deletes the item at a specific position in a list.
+
+- Prototype: `def delete_at(my_list=[], idx=0):`
+- If `idx` is negative or out of range, nothing change (returns the same list).
