@@ -44,4 +44,12 @@
 - If a tuple is smaller than 2, the value 0 will be used for each missing integer
 - If a tuple is bigger than 2, only the first 2 integers will be used.
 
-**8-multiple_returns.py:** 
+**8-multiple_returns.py:** returns a tuple with the length of a string and its first character.
+
+- Prototype: `def multiple_returns(sentence):`
+- If the sentence is empty, the first character should be equal to `None`
+
+**9-max_integer.py:** finds the biggest integer of a list.
+
+- Prototype: `def max_integer(my_list=[]):`
+- If the list is empty, return `None`
