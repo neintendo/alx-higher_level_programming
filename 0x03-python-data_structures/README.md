@@ -30,3 +30,18 @@
 
 - Prototype: `def no_c(my_string):`
 - The function returns the new string.
+
+**6-print_matrix_integer.py:** prints a matrix of integers.
+
+- Prototype: `def print_matrix_integer(matrix=[[]]):`
+
+**7-add_tuple.py:** adds 2 tuples.
+
+- Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
+- Returns a tuple with 2 integers:
+- The first element should be the addition of the first element of each argument.
+- The second element should be the addition of the second element of each argument.
+- If a tuple is smaller than 2, the value 0 will be used for each missing integer
+- If a tuple is bigger than 2, only the first 2 integers will be used.
+
+**8-multiple_returns.py:** 
