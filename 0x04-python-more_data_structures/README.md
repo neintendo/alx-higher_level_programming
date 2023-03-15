@@ -16,3 +16,7 @@
 - `my_list` is the initial list.
 - `search` is the element to replace in the list.
 - `replace` is the new element.
+
+**2-uniq_add.py:** adds all unique integers in a list (only once for each integer).
+
+- Prototype: `def uniq_add(my_list=[]):`
