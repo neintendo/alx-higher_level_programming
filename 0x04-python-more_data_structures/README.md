@@ -28,3 +28,7 @@
 **4-only_diff_elements.py:** returns a set of all elements present in only one set.
 
 - Prototype: `def only_diff_elements(set_1, set_2):`
+
+**5-number_keys.py:** returns the number of keys in a dictionary.
+
+- Prototype: `def number_keys(a_dictionary):`
