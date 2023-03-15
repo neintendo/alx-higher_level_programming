@@ -20,3 +20,7 @@
 **2-uniq_add.py:** adds all unique integers in a list (only once for each integer).
 
 - Prototype: `def uniq_add(my_list=[]):`
+
+**3-common_elements.py:** returns a set of common elements in two sets.
+
+- Prototype: `def common_elements(set_1, set_2):`
