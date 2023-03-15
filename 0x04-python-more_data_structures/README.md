@@ -9,3 +9,10 @@
 
     > Each value should be the square of the value of the input.
 - Initial `matrix` should not be modified.
+
+**1-search_replace.py:** replaces all occurrences of an element by another in a new list.
+
+- Prototype: `def search_replace(my_list, search, replace):`
+- `my_list` is the initial list.
+- `search` is the element to replace in the list.
+- `replace` is the new element.
