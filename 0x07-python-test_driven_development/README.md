@@ -30,10 +30,18 @@
 - If `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`.
 - If `size` is a float and is less than 0, raise a `TypeError` exception with the message `size must be an integer`
 
+**5-text_indentation.py:** prints text with 2 new lines after each of these characters: `.`, `?` and `:`
+
+- Prototype: `def text_indentation(text):`
+- `text` must be a string, otherwise raise a `TypeError` exception with the message `text must be a string`.
+- There should be no space at the beginning or at the end of each printed line.
+
 **tests/0-add_integer.txt:** containts 9 different test cases for the add_integer function.
 
 **tests/2-matrix_divided.txt:** contains 9 different test cases for the matrix_divided function.
 
-**tests/3-say_my_name:** contains 6 different test cases for the say_my_name function.
+**tests/3-say_my_name.txt:** contains 6 different test cases for the say_my_name function.
 
 **tests/4-print_square.txt:** contains 4 different test cases for the print_square function.
+
+**tests/5-text_indentation.txt:** containts 4 different test cases for the text_indentation function.
