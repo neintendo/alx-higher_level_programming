@@ -17,5 +17,11 @@
 - All elements of the `matrix` should be divided by `div`, rounded to 2 decimal places.
 - Returns a new matrix.
 
+**3-say_my_name:**  prints `My name is <first name> <last name>`
+
+- Prototype: `def say_my_name(first_name, last_name=""):`
+`first_name` and `last_name` must be strings otherwise, raise a `TypeError` exception with the message `first_name must be a string or last_name must be a string`.
+
 **tests/0-add_integer.txt:** containts 9 different test cases for the add_integer function.
 **tests/2-matrix_divided.txt:** contains 9 different test cases for the matrix_divided function.
+**tests/3-say_my_name:** contains 6 different test cases for the say_my_name function.
