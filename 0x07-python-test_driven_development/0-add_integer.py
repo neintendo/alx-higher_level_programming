@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides a function that adds two integers,
+This module provides a function that adds two integers.
 
 Usage: add_integer = __import__('0-add_integer').add_integer
 """
