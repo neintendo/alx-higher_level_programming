@@ -22,6 +22,18 @@
 - Prototype: `def say_my_name(first_name, last_name=""):`
 `first_name` and `last_name` must be strings otherwise, raise a `TypeError` exception with the message `first_name must be a string or last_name must be a string`.
 
+**4-print_square.py:** prints a square with the character `#`.
+
+- Prototype: `def print_square(size):`
+- `size` is the `size` length of the square
+- `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`.
+- If `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`.
+- If `size` is a float and is less than 0, raise a `TypeError` exception with the message `size must be an integer`
+
 **tests/0-add_integer.txt:** containts 9 different test cases for the add_integer function.
+
 **tests/2-matrix_divided.txt:** contains 9 different test cases for the matrix_divided function.
+
 **tests/3-say_my_name:** contains 6 different test cases for the say_my_name function.
+
+**tests/4-print_square.txt:** contains 4 different test cases for the print_square function.
