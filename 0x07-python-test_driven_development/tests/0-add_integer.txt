@@ -1,0 +1,36 @@
+Tests for the ``add_integer`` module.
+============================
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(10, 2)
+12
+
+>>> add_integer(int(4.1), 2)
+6
+
+>>> add_integer(1.100, 5)
+6
+
+>>> add_integer((1.0e308 * 1.0e308), 1.0e308)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer("test")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+>>> add_integer(0)
+98
+
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
