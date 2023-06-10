@@ -36,6 +36,8 @@
 - `text` must be a string, otherwise raise a `TypeError` exception with the message `text must be a string`.
 - There should be no space at the beginning or at the end of each printed line.
 
+**6-max_integer_test.py:** unittests for the function `def max_integer(list=[]):`.
+
 **tests/0-add_integer.txt:** containts 9 different test cases for the add_integer function.
 
 **tests/2-matrix_divided.txt:** contains 9 different test cases for the matrix_divided function.
