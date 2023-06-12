@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
 This module provides a function that checks if an object is
-of a specified class.
+kind of a specified class.
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
-    Checks if the obj is exactly an instance of a_class.
+    Checks if the obj is kind of an instance of a_class.
 
     Arguments:
         obj: the object to inspect.
@@ -18,7 +18,7 @@ def is_same_class(obj, a_class):
         False: if bj is not an instance of a_class.
     """
 
-    if type(obj) == a_class:
+    if isinstance(obj, a_class):
         return True
     else:
         return False
