@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-This module provides a function to print a sorted list without modifying
+This module provides a class that takes list as an argument.
+
+The MyList class provides a function to print a sorted list without modifying
 the original one.
 """
 
