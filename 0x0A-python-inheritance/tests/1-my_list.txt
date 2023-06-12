@@ -1,0 +1,21 @@
+Tests for the 1-my_list function.
+====================================
+
+>>> MyList = __import__('1-my_list').MyList
+
+>>> MyList.print_sorted([25, 10, 15, 5])
+[5, 10, 15, 25]
+
+>>> MyList.print_sorted([-10, -100, -50, -25])
+[-100, -50, -25, -10]
+
+>>> MyList.print_sorted([10])
+[10]
+
+>>> MyList.print_sorted([5, 10, "Ten"])
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+>>> MyList.print_sorted([])
+[]
