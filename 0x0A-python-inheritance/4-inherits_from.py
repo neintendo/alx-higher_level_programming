@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """
 This module containts a function that checks the subclass
 of an object.
