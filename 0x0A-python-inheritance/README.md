@@ -43,6 +43,7 @@
 - Instantiation with `width` and `height`: `def __init__(self, width, height):`:
   - `width` and `height` must be private. No getter or setter.
   - `width` and `height` must be positive integers validated by `integer_validator`.
+- `print()` should print, and `str()` should return, the following rectangle description: `[Rectangle] <width>/<height>`
 
 **10-square.py:** a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
 
@@ -50,3 +51,11 @@
   - `size` must be private. No getter or setter.
   - `size` must be a positive integer, validated by `integer_validator`.
 - The `area()` method must be implemented
+
+**11-square.py:** a class `Square` that inherits from `Rectangle` (`10-sqaure.py`):
+
+- Instantiation with `size`: `def __init__(self, size):`:
+  - `size` must be private. No getter or setter.
+  - `size` must be a positive integer, validated by `integer_validator`.
+- The `area()` method must be implemented.
+- `print()` should print, and `str()` should return, the square description: `[Square] <width>/<height>`
