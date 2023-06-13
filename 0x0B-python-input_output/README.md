@@ -19,3 +19,7 @@ Prototype: `def to_json_string(my_obj):`
 **4-from_json_string.py:** a function that returns an object (Python data structure) represented by a JSON string:
 
 - Prototype: `def from_json_string(my_str):`
+
+**5-save_to_json_file.py:** a function that writes an object to a text file, using a JSON representation:
+
+Prototype: `def save_to_json_file(my_obj, filename):`
