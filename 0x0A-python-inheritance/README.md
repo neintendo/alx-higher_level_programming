@@ -43,3 +43,10 @@
 - Instantiation with `width` and `height`: `def __init__(self, width, height):`:
   - `width` and `height` must be private. No getter or setter.
   - `width` and `height` must be positive integers validated by `integer_validator`.
+
+**10-square.py:** a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
+
+- Instantiation with `size`: `def __init__(self, size):`:
+  - `size` must be private. No getter or setter.
+  - `size` must be a positive integer, validated by `integer_validator`.
+- The `area()` method must be implemented
