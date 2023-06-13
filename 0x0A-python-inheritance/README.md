@@ -33,3 +33,7 @@
 - Public instance method: `def integer_validator(self, name, value):` that validates `value`:
 - If `value` is not an integer: raise a `TypeError` exception, with the `message <name> must be an integer`.
 - If `value` is less or equal to 0: raise a `ValueError` exception with the message `<name> must be greater than 0`.
+
+**8-base_geometry.py:** a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`).
+
+- Instantiation with `width` and `height`: `def __init__(self, width, height):`
