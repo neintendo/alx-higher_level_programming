@@ -1,11 +1,28 @@
 #!/usr/bin/python3
-
+"""
+This module contains a class which defines a Rectangle
+and several functions within the class that allow it to be
+displayed to STDOUT.
+"""
 from models.base import Base
 
 
 class Rectangle(Base):
+    """
+    Represents a rectangle with width and height attributes.
+    x and y are for STDOUT spacing.
+    """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Constructs a rectangle with the specified arguments.
+
+        Arguments:
+            width: the width of the rectangle.
+            height: the height of the rectangle.
+            x: horizontal spacing.
+            y: vertical spacing.
+        """
         self.__width = width
         self.__height = height
         self.__x = x
@@ -29,7 +46,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """String representation of object Rectangle"""
-        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.__id, self.__x, self.__y, self.__width, self.__height))
+        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format
+                (self.__id, self.__x, self.__y, self.__width, self.__height))
 
     def update(self, *args, **kwargs):
         """Assigns an argument to each attribute"""

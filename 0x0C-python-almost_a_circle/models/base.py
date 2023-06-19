@@ -12,10 +12,10 @@ class Base:
 
     def __init__(self, id=None):
         """Initialises public instance attribute id"""
-        if id != None:
+        if id is not None:
             self.id = id
-            return(self.id)
+            return (self.id)
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-            return(self.id)
+            return (self.id)
