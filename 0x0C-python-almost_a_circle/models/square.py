@@ -21,6 +21,19 @@ class Square(Rectangle):
         return ("[Square] ({:d}) {:d}/{:d} - {:d}".format
                 (self.id, self.x, self.y, self.width))
 
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute"""
+
+        if len(args) != 0:
+            for argt in range(len(args)):
+                attributes = ["id", "size", "x", "y"]
+                for i, value in enumerate(args):
+                    if i < len(attributes):
+                        setattr(self, attributes[i], value)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
     @property
     def size(self):
         return self.width
