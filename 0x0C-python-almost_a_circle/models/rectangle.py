@@ -64,28 +64,17 @@ class Rectangle(Base):
 
         if len(args) != 0:
             for argt in range(len(args)):
-                if argt == 0:
-                    self.__id = args[0]
-                if argt == 1:
-                    self.__width = args[1]
-                if argt == 2:
-                    self.__height = args[2]
-                if argt == 3:
-                    self.__x = args[3]
-                if argt == 4:
-                    self.__y = args[4]
+                attributes = ["id", "width", "height", "x", "y"]
+                for i, value in enumerate(args):
+                    if i == 0:
+                        self.__id = value
+                    if i < len(attributes):
+                        setattr(self, attributes[i], value)
         else:
-            for n, v in kwargs.items():
-                if n == "id":
-                    self.__id = v
-                elif n == "width":
-                    self.__width = v
-                elif n == "height":
-                    self.__height = v
-                elif n == "x":
-                    self.__x = v
-                elif n == "height":
-                    self.__y = v
+            if "id" in kwargs:
+                self.__id = kwargs["id"]
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     @property
     def width(self):
