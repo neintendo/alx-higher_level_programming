@@ -14,6 +14,8 @@ class Base:
         """Initialises public instance attribute id"""
         if id != None:
             self.id = id
+            return(self.id)
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+            return(self.id)
