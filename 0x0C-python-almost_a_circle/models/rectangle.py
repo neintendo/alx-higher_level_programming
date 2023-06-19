@@ -86,8 +86,6 @@ class Rectangle(Base):
                     self.__x = v
                 elif n == "height":
                     self.__y = v
-                else:
-                    pass
 
     @property
     def width(self):
