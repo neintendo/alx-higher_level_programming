@@ -29,6 +29,16 @@ class Rectangle(Base):
         self.__y = y
         self.__id = super().__init__(id)
 
+    def validation(self, name, value):
+        """Validates dimension values"""
+        if isinstance(value, int) is not True:
+            raise TypeError("{:s} must be an integer".format(name))
+        if value < 0:
+            if name == "x" or name == "y":
+                raise ValueError("{:s} must be >= 0".format(name))
+        if value <= 0:
+            raise ValueError("{:s} must be > 0".format(name))
+
     def area(self):
         """Returns the area value of the Rectangle instance."""
         return self.__width * self.__height
@@ -97,32 +107,20 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        if isinstance(value, int) != 1:
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be > 0")
+        self.validation("width", value)
         self.__width = value
 
     @height.setter
     def height(self, value):
-        if isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be > 0")
+        self.validation("height", value)
         self.__height = value
 
     @x.setter
     def x(self, value):
-        if isinstance(value, int) != 1:
-            raise TypeError("x must be an integer")
-        if value <= 0:
-            raise ValueError("x must be >= 0")
+        self.validation("x", value)
         self.__x = value
 
     @y.setter
     def y(self, value):
-        if isinstance(value, int) != 1:
-            raise TypeError("y must be an integer")
-        if value <= 0:
-            raise ValueError("y must be >= 0")
+        self.validation("y", value)
         self.__y = value
