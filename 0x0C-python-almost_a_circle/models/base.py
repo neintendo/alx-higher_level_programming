@@ -52,3 +52,18 @@ class Base:
             data = [obj.to_dictionary() for obj in list_objs]
         with open(filename, "w") as file:
             file.write(cls.to_json_string(data))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Returns the list of the JSON string representation of json_string
+
+        Arguments:
+            json_string: a string representing a list of dictionaries.
+        """
+        import json
+
+        if json_string is None:
+            return "[]"
+        else:
+            return (json.loads(json_string))
